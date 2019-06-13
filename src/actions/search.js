@@ -5,7 +5,7 @@ import YOUTUBE_API_KEY from '../config/youtube.js';
 
 var handleVideoSearch = q => {
   return function thunk(dispatch) {
-    return searchYouTube({ query: q }, videos => {
+    return searchYouTube({ key: YOUTUBE_API_KEY, query: q }, videos => {
       dispatch(changeVideoList(videos));
       dispatch(changeVideo(videos[0]));
     });
