@@ -13,6 +13,7 @@ var App = () => (
     <div className="row">
       <div className="col-md-7">
         <VideoPlayerContainer />
+        <p>Comments go here</p>
       </div>
       <div className="col-md-5">
         <VideoListContainer />
