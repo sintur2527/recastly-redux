@@ -1,6 +1,9 @@
 import Redux from 'redux';
+import exampleVideoData from '../data/exampleVideoData';
 
-var currentVideo = (state = null, action) => {
+var init = exampleVideoData[0];
+
+var currentVideo = (state = init, action) => {
   //TODO: define a reducer for the currentVideo field of our state.
   switch (action.type) {
     case 'CHANGE_VIDEO':
